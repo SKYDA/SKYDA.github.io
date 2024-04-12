@@ -16,6 +16,7 @@ if (isGithubActions) {
 }
 
 const nextConfig = {
+  distDir: 'out',
   assetPrefix,
   basePath,
   reactStrictMode: true,
