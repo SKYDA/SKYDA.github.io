@@ -45,7 +45,7 @@ jobs:
       - name: 安装依赖 ⚙️
         run: pnpm install --no-frozen-lockfile
       - name: Build with Next.js
-        run: next build
+        run: pnpm next build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
