@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "next -p 3002",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
   },
