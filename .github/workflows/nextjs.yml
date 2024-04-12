@@ -34,7 +34,7 @@ jobs:
 
       - name: Node环境版本
         uses: actions/setup-node@v3
-          with:
+        with:
             node-version: 18
       - name: 安装 Pnpm 🧬
         uses: pnpm/action-setup@v2
