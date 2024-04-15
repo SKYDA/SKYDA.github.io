@@ -1,27 +1,19 @@
-import fs from 'fs';
-import path from 'path';
+import { POSTS } from '../postsMdx/constants';
 import matter from 'gray-matter';
 
-const postsDirectory = path.join(process.cwd() + '/src/', 'posts')
-
 export const getPostsFiles = () => {
-    return fs.readdirSync(postsDirectory);
+    return POSTS.map(item => item.title)
 }
 
 
 export function getPostData(postIdentifier) {
-    //extract slug from file name
-    const postSlug = postIdentifier.replace(/\.md$/, '');
-
-    const filePath = path.join(postsDirectory, `${postSlug}.md`);
-    const fileContent = fs.readFileSync(filePath, 'utf-8');
-    const { data, content } = matter(fileContent);
-
+    console.log('%c⧭', 'color: #00a3cc', postIdentifier);
+    // const { data, content } = matter(fileContent);
+    const file = POSTS.find(item => item.title === postIdentifier) || {}
     const postData = {
-        slug: postSlug,
-        ...data,
-        content,
-    };
+        slug: postIdentifier,
+        ...file,
+    }
 
     return postData;
 }
