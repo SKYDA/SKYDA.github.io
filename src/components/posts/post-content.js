@@ -8,7 +8,9 @@ import js from 'react-syntax-highlighter/dist/cjs/languages/prism/javascript';
 import jsx from 'react-syntax-highlighter/dist/cjs/languages/prism/jsx';
 import css from 'react-syntax-highlighter/dist/cjs/languages/prism/css';
 import atomDark from 'react-syntax-highlighter/dist/cjs/styles/prism/atom-dark';
-import LikeButton from '../ui/like-button';
+
+import { POST_CONTENT_MAP } from '../../postsMdx/constants'
+// import LikeButton from '../ui/like-button';
 
 
 SyntaxHighlighter.registerLanguage('js', js);
@@ -18,6 +20,7 @@ SyntaxHighlighter.registerLanguage('css', css);
 function PostContent({ postData }) {
 
     const { title, image, date, slug, readTime, topic, content, updatedDate } = postData;
+    const ContentComp = POST_CONTENT_MAP[title]
 
     const formattedDate = new Date(date).toLocaleDateString('en-US', {
         day: 'numeric',
@@ -84,6 +87,7 @@ function PostContent({ postData }) {
                 <hr />
                     <article className="prose prose-slate prose-img:rounded-xl prose-headings:underline prose-a:text-blue-600 lg:prose-lg my-4">
                         <ReactMarkdown components={customRenderers}>{content}</ReactMarkdown>
+                        <ContentComp />
                 </article>
                     <hr />
                     <div className='flex flex-col md:flex-row items-center md:justify-between  md:my-4 my-2 py-4 px-8'>
@@ -91,7 +95,7 @@ function PostContent({ postData }) {
                             <h2 className='text-lg font-semibold font-Bai text-center text-gray-500'>Last updated</h2>
                             <h2 className='text-xl font-semibold font-Bai text-center '>{updatedDate ? formattedUpdatedDate : formattedDate}</h2>
                         </div>
-                        <LikeButton postSlug={slug} />
+                        {/* <LikeButton postSlug={slug} /> */}
                     </div>
             </div>
         </div >

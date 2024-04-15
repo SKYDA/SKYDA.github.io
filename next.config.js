@@ -18,6 +18,7 @@ if (isGithubActions) {
 }
 
 const nextConfig = {
+  output: 'export',
   distDir: 'out',
   assetPrefix,
   basePath,

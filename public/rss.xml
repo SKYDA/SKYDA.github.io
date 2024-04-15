@@ -1,75 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0">
     <channel>
         <title>Articles by Teyim Asobo</title>
         <link>https://markdown-blog-ten-beta.vercel.app/</link>
         <description>U can find me on all platforms like twitter,github and linkedIn.pretty nerdy? ,yes i know. I am also on facebook and instagram too, not sharing hot pics though..i have a passion for frontend development</description>
-        <lastBuildDate>Mon, 15 Apr 2024 02:17:01 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 15 Apr 2024 06:11:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[Mastering JavaScript]]></title>
-            <link>https://markdown-blog-ten-beta.vercel.app//mastering-javascript</link>
-            <guid>https://markdown-blog-ten-beta.vercel.app//mastering-javascript</guid>
-            <pubDate>Thu, 03 Mar 2022 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[
-JavaScript powers the web - it's **the** most important programming language you need to know as a web developer.
-
-For example, you should understand code like this:
-
-```js
-const basics = 'Okay, that should not be too difficult actually';
-
-function printBasics() {
-  console.log(basics):
-}
-
-printBasics();
-```
-
-Learn more about it [here](https://academind.com).
-]]></content:encoded>
-            <author>teyimasobo@gmail.com (Teyim Asobo)</author>
-        </item>
-        <item>
-            <title><![CDATA[Handy css trick to save time]]></title>
-            <link>https://markdown-blog-ten-beta.vercel.app//handy-css-trick</link>
-            <guid>https://markdown-blog-ten-beta.vercel.app//handy-css-trick</guid>
+            <title><![CDATA[Handy css trick]]></title>
+            <link>https://markdown-blog-ten-beta.vercel.app//Handy css trick</link>
+            <guid>https://markdown-blog-ten-beta.vercel.app//Handy css trick</guid>
             <pubDate>Sun, 13 Feb 2022 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[
-Wondering why centering a div is a big problem for most developers?thats because css is hard.
-
-but wuth this article,u leaner how to center  div with very few steps
-
-**Html code**
-```html
-<div class="container">
-  <div class="child"></div>
-</div>
-```
-
-**Css code**
-```css
-.container{
- display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.child {
-  width: 50px;
-  height: 50px;
-  background-color: red;
-}
-
-```
-
-there u go..now you can center a div properly.
-
-
-
-]]></content:encoded>
             <author>teyimasobo@gmail.com (Teyim Asobo)</author>
         </item>
     </channel>

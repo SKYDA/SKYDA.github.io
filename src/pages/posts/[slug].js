@@ -3,12 +3,12 @@ import PostContent from '../../components/posts/post-content'
 import { getPostData, getPostsFiles } from '../../helpers/posts-utils'
 import { NextSeo } from 'next-seo';
 
-function SinglePost({ data }) {
+function SinglePost({ data = {} }) {
     return (
         <>
             <NextSeo
-                title={data.title}
-                description={data.excerpt}
+                title={data?.title}
+                description={data?.excerpt}
             />
             <PostContent postData={data} />
         </>
@@ -25,7 +25,7 @@ export const getStaticProps = (context) => {
         props: {
             data: postData
         },
-        revalidate: 600,
+        // revalidate: 600,
     }
 }
 export const getStaticPaths = () => {

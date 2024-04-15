@@ -7,7 +7,6 @@ export const getPostsFiles = () => {
 
 
 export function getPostData(postIdentifier) {
-    console.log('%c⧭', 'color: #00a3cc', postIdentifier);
     // const { data, content } = matter(fileContent);
     const file = POSTS.find(item => item.title === postIdentifier) || {}
     const postData = {

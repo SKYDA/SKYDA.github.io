@@ -1,4 +1,4 @@
-import fs from 'fs'
+// import fs from 'fs'
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineArrowDown } from 'react-icons/ai'
@@ -37,7 +37,7 @@ export const getStaticProps = () => {
   const feed = generateRSSFeed(allPost)
   // Write the RSS output to a public file, making it
   // accessible at https://markdown-blog-ten-beta.vercel.app/rss.xml
-  fs.writeFileSync('public/rss.xml', feed.rss2());
+  // fs.writeFileSync('public/rss.xml', feed.rss2());
 
   return {
     props: {

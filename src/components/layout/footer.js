@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Form from '../form/form'
+// import Form from '../form/form'
 function Footer() {
     return (
         <footer className=" flex flex-col items-center bg-black w-full space-x-2 py-10 md:px-12 px-4 mt-8 text-white font-Rubik bottom-0 ">
