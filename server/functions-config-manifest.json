@@ -1,1 +1,1 @@
-{"version":1,"functions":{"/":{},"/posts/[slug]":{},"/topics/[topicId]":{},"/posts":{}}}
+{"version":1,"functions":{"/":{},"/posts/[slug]":{},"/posts":{},"/topics/[topicId]":{}}}
