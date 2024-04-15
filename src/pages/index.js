@@ -5,7 +5,6 @@ import { AiOutlineArrowDown } from 'react-icons/ai'
 import PostList from "../components/posts/post-list";
 import generateRSSFeed from "../helpers/build-helpers/generate-rss-feed";
 import { getAllPosts, getLatestPosts } from "../helpers/posts-utils";
-import Posts from '../postsMdx'
 
 
 
@@ -23,7 +22,6 @@ export default function Home({ posts }) {
       </header>
 
       <div className="w-full font-Rubik text-gray-800 ">
-        <Posts />
         <PostList posts={posts} heading='Latest Articles' />
       </div>
 
