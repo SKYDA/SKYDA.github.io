@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Articles by Teyim Asobo</title>
+        <link>https://markdown-blog-ten-beta.vercel.app/</link>
+        <description>U can find me on all platforms like twitter,github and linkedIn.pretty nerdy? ,yes i know. I am also on facebook and instagram too, not sharing hot pics though..i have a passion for frontend development</description>
+        <lastBuildDate>Mon, 15 Apr 2024 06:11:14 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Handy css trick]]></title>
+            <link>https://markdown-blog-ten-beta.vercel.app//Handy css trick</link>
+            <guid>https://markdown-blog-ten-beta.vercel.app//Handy css trick</guid>
+            <pubDate>Sun, 13 Feb 2022 00:00:00 GMT</pubDate>
+            <author>teyimasobo@gmail.com (Teyim Asobo)</author>
+        </item>
+    </channel>
+</rss>
